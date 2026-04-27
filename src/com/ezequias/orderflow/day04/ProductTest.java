@@ -7,5 +7,9 @@ public class ProductTest {
         System.out.println("Name: " + product.name);
         System.out.printf("Price: $%.2f%n", product.price);
         System.out.println("Stock: " + product.stockQuantity);
+        System.out.printf("Inventory value: $%.2f%n", product.calculateInventoryValue());
+        System.out.println("Stock status: " + product.classifyStock());
+        System.out.println("Inventory status: " + product.classifyInventory());
+
     }
 }
